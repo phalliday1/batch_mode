@@ -12,7 +12,7 @@ def user_prompt():
     pitch_ub = input("What is the maximum E-W pitch to consider?")
     pitch_lb = input("What is the minimum E-W pitch to consider?")
     pitch_its = input("How many interations on pitch should be considered?")
-    project_name = input('What is the PVSyst project name?')
+    project_name = input("What is the PVSyst project name?")
     
     inputs= {'strings_ub':strings_ub,
              'strings_lb':strings_lb,
