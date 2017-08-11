@@ -14,16 +14,6 @@ import time
 
 user_inputs = user_prompt()
 
-
-#strings_ub = input("What is the maximum number of strings to consider?")
-#strings_lb = input("What is the minimum number of strings to consider?")
-#strings_its = input("How many iterations on the number of strings should be considered?")
-#pitch_ub = input("What is the maximum E-W pitch to consider?")
-#pitch_lb = input("What is the minimum E-W pitch to consider?")
-#pitch_its = input("How many interations on pitch should be considered?")
-#hourly = False if raw_input("Do you want 8760s?").lower() == 'no' or 'No' or 'n' or 'N' else True
-
-#project_name = 'AZ_Eloy1'
 version = 'VC1'
 timestamp = time.strftime("%c")
 
@@ -60,7 +50,7 @@ batch = pd.DataFrame(index=range(0,50),columns=['PVsyst simulations Batch mode;'
 batch.iloc[0,0] = 'Simulation parameters definition;'
 batch.iloc[1,0] = "File modified on %s;" % timestamp
 batch.iloc[2,0] = ';'
-batch.iloc[3,0] = 'Project ;;; %s;'% user_inputs['project_name']
+#batch.iloc[3,0] = 'Project ;;; %s;'% user_inputs['project']
 batch.iloc[4,0] = ''
 batch.iloc[5,0] = ';'
 batch.iloc[6,0] = 'Please define the parameters to be varied for each run;'
@@ -78,7 +68,7 @@ else:
 batch.iloc[13,0] = ';'
 
 int1 = user_inputs['strings_lb']
-int2 = user_inputs['pitch_ln']
+int2 = user_inputs['pitch_lb']
 delta1 = (user_inputs['strings_ub']-user_inputs['strings_lb'])/user_inputs['strings_its']
 delta2 = (user_inputs['pitch_ub']-user_inputs['pitch_lb'])/user_inputs['pitch_its']
 
