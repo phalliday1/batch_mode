@@ -8,7 +8,7 @@ def user_prompt():
     
     strings_ub = input("What is the maximum number of strings to consider?")
     strings_lb = input("What is the minimum number of strings to consider?")
-    string_its = input("How many iterations on the number of strings should be considered?")
+    strings_its = input("How many iterations on the number of strings should be considered?")
     pitch_ub = input("What is the maximum E-W pitch to consider?")
     pitch_lb = input("What is the minimum E-W pitch to consider?")
     pitch_its = input("How many interations on pitch should be considered?")
