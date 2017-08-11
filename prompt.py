@@ -20,7 +20,7 @@ def user_prompt():
              'pitch_ub':pitch_ub,
              'pitch_lb':pitch_lb,
              'pitch_its':pitch_its,
-             'project_name':project_name}
+             'project_name':str(project_name)}
 
     return inputs
 

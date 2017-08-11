@@ -23,7 +23,7 @@ user_inputs = user_prompt()
 #pitch_its = input("How many interations on pitch should be considered?")
 #hourly = False if raw_input("Do you want 8760s?").lower() == 'no' or 'No' or 'n' or 'N' else True
 
-project_name = 'AZ_Eloy1'
+#project_name = 'AZ_Eloy1'
 version = 'VC1'
 timestamp = time.strftime("%c")
 
