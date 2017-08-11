@@ -13,7 +13,12 @@ def user_prompt():
     pitch_lb = input("What is the minimum E-W pitch to consider?")
     pitch_its = input("How many interations on pitch should be considered?")
     
-    inputs= {'strings_ub':strings_ub, 'strings_lb':strings_lb, 'strings_its':strings_its, 'pitch_ub':pitch_ub, 'pitch_lb':pitch_lb, 'pitch_its':pitch_its}
+    inputs= {'strings_ub':strings_ub,
+             'strings_lb':strings_lb,
+             'strings_its':strings_its,
+             'pitch_ub':pitch_ub,
+             'pitch_lb':pitch_lb,
+             'pitch_its':pitch_its}
 
     return inputs
 
