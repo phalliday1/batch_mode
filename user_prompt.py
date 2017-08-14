@@ -4,7 +4,7 @@ Created on Thu Aug 10 15:21:07 2017
 
 @author: 8ME-HW-171-L
 """
-def user_prompt():
+def main():
     
     strings_ub = raw_input("What is the maximum number of strings to consider?")
     strings_lb = raw_input("What is the minimum number of strings to consider?")
